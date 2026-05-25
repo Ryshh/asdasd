@@ -1,3 +1,4 @@
+### Setup + SQL
 ````
 import express from "express"
 import cors from "cors"
@@ -17,3 +18,15 @@ app.use(express.json())
 
 app.listen(88, err => console.log(err ?? "Opened on port :88"))
 app.get("/", (req, res) => res.send("<h1>Backend v1.0.0</h1>"))
+````
+### Execute
+````
+try
+{
+    let sql = "SELECT * FROM database WHERE name = ?"
+    let [json] = await con.execute(sql, ["rick"])
+}
+catch (err)
+{
+    
+}
