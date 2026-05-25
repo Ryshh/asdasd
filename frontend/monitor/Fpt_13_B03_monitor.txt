@@ -1,0 +1,15 @@
+
+ * Az oldal magyar nyelvű, Monitor című, monitor.png PNG ikonnal!
+   Nem kell a StrictMode és az index.css!
+   Háttere darkslategray, tartalma 90% széles, középre igazított!
+   Mindkét doboz háttere fehér, 0px 0px 5px fehér árnyékkal,
+   10px belső margóval és 10px kerekítéssel!
+ * A felső <Input /> komponensben a beviteli mezők vékony szürke keretűek,
+   5px kerekítéssel, a típus 200px, a méret 50px széles, utóbbi középre igazított!
+   Az elemek között a távolság 5px! Ha a Hozzáad gombra kattintunk,
+   akkor a backend segítségével vegyük fel az új monitort!
+ * Az alsó <Lista /> komponensben jelenítsük meg a backendtől elkért
+   monitorok adatait a mintának megfelelő módon!
+   Az egérmutató alatti sor háttérszíne legyen világoszöld!
+   A kuka ikonnal legyen lehetőség az adott monitor törlésére!
+ * ViTeszteljük a komponenseket!
