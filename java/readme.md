@@ -1,24 +1,20 @@
 ````
-  public class Allat {
-      public String faj;
-      public int magas;
-      public int suly;
-      public int kor;
+  public class Adat {
+      public String s1;
+      public int i1;
 
       public Allat(String sor) {
           String[] s = sor.split(";");
-          faj = s[0];
-          magas = Integer.parseInt(s[1]);
-          suly = Integer.parseInt(s[2]);
-          kor = Integer.parseInt(s[3]);
+          s1 = s[0];
+          i1 = Integer.parseInt(s[1]);
       }
   }
 
-  private ArrayList<Allat> allatok = new ArrayList<>();
+  private ArrayList<Adat> adatok = new ArrayList<>();
 
   public Main() {
-      betolt("allatok.csv");
-      System.out.printf("0) Összesen %d féle állatfajta adata beolvasva\n", allatok.size());
+      betolt("adatok.csv");
+      System.out.printf("0) Összesen %d adat beolvasva\n", adatok.size());
   }
 
   private void betolt(String fajlnev) {
@@ -27,7 +23,7 @@
           be = new Scanner(new File(fajlnev), "utf-8");
           be.nextLine();
           while (be.hasNextLine()) {
-              allatok.add(new Allat(be.nextLine()));
+              adatok.add(new Adat(be.nextLine()));
           }
       } catch (FileNotFoundException e) {
           throw new RuntimeException(e);
